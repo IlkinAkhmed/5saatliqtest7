@@ -1,0 +1,122 @@
+.products {
+    width: 100%;
+    padding: 50px 0;
+
+    .head {
+        width: 35%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2 {
+            font-size: 3em;
+        }
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 50px 0;
+
+        .card {
+            width: 30%;
+
+            .img {
+                overflow: hidden;
+
+                // height: 50%;
+                &:hover img {
+                    transform: scale(1.1);
+                }
+
+                img {
+                    width: 100%;
+                    transition: all .3s;
+                }
+            }
+
+            .texts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 20px 0;
+                .counter{
+                    display: flex;
+                    gap: 15px;
+                    p{
+                        background-color: orangered;
+                        padding: 0 5px;
+                        color: white;
+                        border-radius: 100%;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                }
+
+                .rating {
+                    display: flex;
+                    width: 30%;
+                    justify-content: space-between;
+
+                    .fa-star {
+                        color: orangered;
+                    }
+
+                    .fa-heart {
+                        color: gray;
+                    }
+                }
+
+                p {
+                    color: gray;
+                }
+
+                .basket-add {
+                    width: 40%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    button {
+                        cursor: pointer;
+                        padding: 5px 10px;
+                        font-weight: bold;
+                        border: 1px solid black;
+
+                    }
+
+                    .view:hover {
+                        background-color: white !important;
+                        color: black !important;
+                    }
+
+                }
+
+                .wish {
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    color: black;
+                    font-weight: bold;
+                    border: 1px solid black;
+                    background-color: orangered;
+                    &:hover{
+                        background-color: white;
+                    }
+                }
+            }
+
+        }
+    }
+}

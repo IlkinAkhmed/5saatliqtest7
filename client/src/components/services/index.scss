@@ -1,0 +1,92 @@
+.services {
+    width: 100%;
+    padding: 50px 0;
+
+    .services-head {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+
+        p {
+            color: gray;
+
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: bold;
+
+        }
+    }
+
+    .services-wrapper {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .ser-card {
+            width: 31%;
+            display: flex;
+            height: 200px;
+            justify-content: space-between;
+
+            .ser-img {
+                width: 15%;
+
+                i {
+                    color: orangered;
+                    font-size: 3em;
+                }
+            }
+
+            .ser-texts {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                color: gray;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .services {
+        .services-wrapper {
+            width: 90%;
+
+            .ser-card {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .services {
+        .services-wrapper {
+            width: 90%;
+
+            .ser-card {
+                width: 48%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .services {
+        .services-wrapper {
+            width: 80%;
+
+            .ser-card {
+                width: 48%;
+            }
+        }
+    }
+}

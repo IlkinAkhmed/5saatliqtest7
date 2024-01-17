@@ -1,0 +1,96 @@
+.leader {
+    width: 100%;
+    padding: 50px 0;
+
+    .leader-head {
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+
+        p {
+            color: gray;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .leader-wrapper {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .leader-card {
+            width: 28%;
+
+            .led-img {
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .leader-texts {
+                text-align: center;
+                color: gray;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .led-icons {
+                    width: 80%;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    i {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and  (max-width: 576px) {
+    .leader{
+        .leader-wrapper{
+            width: 95%;
+            flex-wrap: wrap;
+            .leader-card{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .leader{
+        .leader-wrapper{
+            width: 90%;
+            flex-wrap: wrap;
+            .leader-card{
+                width: 45%;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .leader{
+        .leader-wrapper{
+            width: 90%;
+            .leader-card{
+                width: 31%;
+            }
+        }
+    }
+    
+}

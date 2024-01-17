@@ -1,0 +1,107 @@
+nav {
+    width: 100%;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 3;
+
+    .navInner {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            width: 10%;
+            h1{
+                font-weight: bold;
+                font-size: 2em;
+            }
+
+        }
+
+        .texts {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .navLink {
+                color: black;
+                font-weight: bold;
+
+                &:hover {
+                    color: orangered;
+                }
+
+                &:global.active {
+
+                    color: orangered;
+                }
+
+            }
+
+        }
+
+        .icons {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+
+            .message {
+                position: relative;
+
+                i {
+                    cursor: pointer;
+                    color: black;
+                    font-size: 1.3em;
+
+                    &:hover {
+                        color: orangered;
+                    }
+                }
+
+                p {
+                    position: absolute;
+                    top: -5px;
+                    right: -10px;
+                    background-color: orangered;
+                    padding: 0 5px;
+                    border-radius: 100%;
+                    font-size: 0.9em;
+                }
+
+            }
+
+        }
+
+        .fa_bars {
+            display: none;
+            cursor: pointer;
+            font-size: 2em;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        .navInner{
+            width: 95%;
+            .texts{
+                display: none;
+            }
+            .icons{
+                width: 50%;
+            }
+            .fa_bars{
+                display: block;
+            }
+        }
+    }
+}

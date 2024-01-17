@@ -1,0 +1,101 @@
+.aboutUs {
+    width: 100%;
+    padding: 50px 0;
+
+    .about-inner {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        height: 60vh;
+
+        .left {
+            width: 50%;
+            height: 100%;
+            background-image: url('https://preview.colorlib.com/theme/selling/images/about_1.jpg');
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            padding: 0 150px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 3em;
+            }
+
+            p,
+            span {
+                color: gray;
+            }
+
+            button {
+                padding: 10px 20px;
+                color: white;
+                cursor: pointer;
+                background-color: black;
+                border: none;
+                font-weight: bold;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .aboutUs {
+        .about-inner {
+            width: 90%;
+            flex-wrap: wrap;
+            background-position: right;
+
+            .left {
+                display: none;
+            }
+
+            .right {
+                width: 100%;
+                text-align: center;
+                gap: 20px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .aboutUs {
+        .about-inner {
+            width: 90%;
+            flex-wrap: wrap;
+            background-position: right;
+
+            .left {
+                width: 30%;
+            }
+
+            .right {
+                width: 60%;
+                padding: 0 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .aboutUs {
+        .about-inner {
+            width: 90%;
+
+            .right {
+                padding: 0 50px;
+            }
+        }
+    }
+}
